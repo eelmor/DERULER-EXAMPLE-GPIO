@@ -156,9 +156,9 @@ int main(void)
 		  HAL_GPIO_WritePin(LED_B_GPIO_Port, LED_B_Pin, GPIO_PIN_SET); // Blue on
 	  }
 
-	  // Wait for 1 second until evaluating again
+	  // Wait for 200 milliseconds until evaluating again
 
-	  HAL_Delay(1000); // 1000 ms
+	  HAL_Delay(200); // 200 ms
 
     /* USER CODE END WHILE */
 
