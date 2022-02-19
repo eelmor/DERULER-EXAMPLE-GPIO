@@ -9,4 +9,3 @@ This example shows how to read and write the state of a pin. The pins used in th
 ## What does this example do?
 
 In this example we configure the pins connected to the buttons as inputs to be able to read if they are pressed and configure the pins connected to the LED as outputs for adjusting the color. When a button is pressed, it creates a short circuit from the pin to ground (state 0). When the button isn't pressed, the pin is not directly connected to anything and thus undefined. This state is also referred to as floating or Hi-Z (high impedance). When the pin is floating, it may read either 1 or 0. To reliably detect if the button is pressed we have to make sure the voltage of the pin is near the supply voltage when the button is not pressed for it to read as 1. We can achieve this by enabling the built-in pull-up resistor on the pin. This connects a 25-65 kohm resistor from the pin to the supply voltage.
- 
